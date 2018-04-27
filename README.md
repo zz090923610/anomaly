@@ -1,15 +1,15 @@
 # anomaly
 
-An easily extensible tool set for individual investors to perform analysis like institution investors, help them to perform fast moves by generating enough reasonable automated analysis results. Started from late 2016, implemented by myself alone. Current implementation is only focusing on analysing/trading stock equities listed on [SSE](http://english.sse.com.cn/) and [SZSE](http://www.szse.cn/main/en/).
+An extensible tool set for individual investors to perform analysis like institution investors, by generating enough reasonable automated analysis results using their own customized models. Started since late 2016, implemented by myself alone. Current implementation is only focusing on analysing/trading stock equities listed on [SSE](http://english.sse.com.cn/) and [SZSE](http://www.szse.cn/main/en/).
 
 It is simply a data processing framework written in pure Python3.6 which:
 
 * Works both on Linux/Windows (but I prefer Linux, some modules are not windows-guaranteed)
 * Provides automated after-market analysis based on your customized models.
-* Provides Realtime symbol monitoring based on your customized rules, if triggered, it notifies you, or simply perform trade actions for you.
-* Provides a universal routine to automate fetch & organize everyday trading data, intermediate data, results and models.
-* Contain a script executor recognizes my own assembly language style Dummy Script Language to extract features from raw trading data or intermediate data in parallel, which could save hundreds of lines of code and help preventing error.
-* Easy to add new models into the framework, once you validate a model for one symbol, you can directly apply it to whole market, and add it to the automated after-market analysis workload no matter it’s a traditional statistic model or a machine learning model.
+* Provides realtime symbol monitoring based on your customized rules, if triggered, it would notifies you, or simply perform trade actions instead of you.
+* Provides a universal routine to automate fetch & organize everyday trading data, generate intermediate data, results using your models.
+* Contain a script executor recognizes my own assembly-language-style Dummy Script Language to extract features from raw trading data or intermediate data in parallel, which could save hundreds of lines of code and help preventing error.
+* Easy to add new models into the framework, once you validate a model for one symbol, you can directly apply it to all listed symbols, and add it to the automated after-market analysis workload no matter it’s a traditional statistic model or a machine learning model.
 
 Sub projects:
 * [Stock](https://github.com/zz090923610/stock): Core project, focusing on subtasks on data fetching, data preprocessing, model applying for automated after-market analysis.
